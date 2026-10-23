@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Weather Terminal Privacy Policy</title>
+<style>
+  :root { --bg: #f6f5ef; --ink: #14170f; --muted: #5a6050; --line: rgba(20,23,15,.18); --accent: #1a7030; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #050805; --ink: #c8ffd2; --muted: #7fa58a; --line: rgba(51,255,102,.2); --accent: #33ff66; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 16px/1.65 ui-monospace, "JetBrains Mono", Menlo, Consolas, monospace; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 1.5rem; letter-spacing: .04em; margin: 0 0 4px; color: var(--accent); }
+  h2 { font-size: 1rem; letter-spacing: .12em; text-transform: uppercase; margin: 36px 0 8px;
+       padding-top: 16px; border-top: 1px solid var(--line); }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 20px; }
+  .meta { color: var(--muted); font-size: .875rem; margin-bottom: 28px; }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: .9rem; margin: 8px 0 16px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 500; letter-spacing: .08em; font-size: .8rem; text-transform: uppercase; }
+  @media (max-width: 520px) { table, thead, tbody, tr, th, td { display: block; } thead { display: none; }
+    td { border: 0; padding: 2px 0; } tr { border-bottom: 1px solid var(--line); padding: 10px 0; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Weather Terminal Privacy Policy</h1>
+  <p class="meta">Effective 16 October 2026 · Applies to the Weather Terminal Android app, version 1.0 and later.</p>
+
+  <p>Weather Terminal is a weather app published by Emma Legrottaglie. It has no user accounts, no advertising, no analytics and no tracking. This policy explains the little information the app handles and where it goes.</p>
+
+  <h2>What the app does not do</h2>
+  <ul>
+    <li>It does not ask for, or use, your device's location. You pick places yourself by searching for them.</li>
+    <li>It does not collect your name, email address, contacts, photos, files or any account details.</li>
+    <li>It does not contain advertising or analytics SDKs, and it does not build a profile of you.</li>
+    <li>It does not sell or share your information with anyone for advertising or marketing.</li>
+  </ul>
+
+  <h2>Information sent to weather services</h2>
+  <p>To show a forecast the app has to ask a weather service about a place. These requests go directly from your phone to the services below over an encrypted (HTTPS) connection. We do not run a server of our own, and we never receive this information.</p>
+  <table>
+    <thead><tr><th>Service</th><th>What is sent</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://open-meteo.com/en/terms">Open-Meteo</a></td>
+          <td>The coordinates of the place you selected</td>
+          <td>Forecasts, air quality and UV index</td></tr>
+      <tr><td><a href="https://open-meteo.com/en/terms">Open-Meteo geocoding</a></td>
+          <td>The text you type into place search</td>
+          <td>Finding places that match your search</td></tr>
+      <tr><td><a href="https://account.windy.com/agreements/windy-privacy-policy">Windy.com</a></td>
+          <td>The coordinates of the place you selected, only when you open the Atlas tab</td>
+          <td>Showing the interactive weather map</td></tr>
+    </tbody>
+  </table>
+  <p>Like any web service, these providers also receive your device's IP address and basic technical information (such as the app or browser version) as part of each request. How they handle it is governed by their own privacy policies, linked above.</p>
+  <p>The coordinates sent are those of the place you chose, which need not be where you are.</p>
+
+  <h2>Information stored on your phone</h2>
+  <p>The app keeps the following in its private storage on your device, so it works offline and remembers your choices:</p>
+  <ul>
+    <li>Your saved places and the few places you viewed most recently.</li>
+    <li>Your display settings (palette, accent set, typeface, motion).</li>
+    <li>Recently downloaded forecasts, kept for a few minutes to a few hours.</li>
+  </ul>
+  <p>This information stays on your phone. If you have Android's backup turned on, Android may include it in your own Google account backup, as it does for most apps. You can delete all of it at any time by clearing the app's storage in Android Settings or by uninstalling the app.</p>
+
+  <h2>Home-screen widgets</h2>
+  <p>The widgets show the same forecast as the app for the place you have selected. To keep them current they refresh in the background, about every 30 minutes, by making the same Open-Meteo requests described above.</p>
+
+  <h2>Children</h2>
+  <p>Weather Terminal is a general-audience app. It does not knowingly collect personal information from anyone, including children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If the app's handling of information changes, this page will be updated and the effective date above will change. Significant changes will also be noted in the app's release notes on Google Play.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:emmalegrottaglie@gmail.com">emmalegrottaglie@gmail.com</a></p>
+</main>
+</body>
+</html>
