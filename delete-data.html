@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Delete Your Data · Weather Terminal</title>
+<style>
+  :root { --bg: #f6f5ef; --ink: #14170f; --muted: #5a6050; --line: rgba(20,23,15,.18); --accent: #1a7030; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #050805; --ink: #c8ffd2; --muted: #7fa58a; --line: rgba(51,255,102,.2); --accent: #33ff66; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 16px/1.65 ui-monospace, "JetBrains Mono", Menlo, Consolas, monospace; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 1.5rem; letter-spacing: .04em; margin: 0 0 4px; color: var(--accent); }
+  h2 { font-size: 1rem; letter-spacing: .12em; text-transform: uppercase; margin: 36px 0 8px;
+       padding-top: 16px; border-top: 1px solid var(--line); }
+  p, li { margin: 0 0 12px; }
+  ol, ul { padding-left: 24px; }
+  .meta { color: var(--muted); font-size: .875rem; margin-bottom: 28px; }
+  .steps li { padding-left: 4px; }
+  .steps strong { color: var(--accent); }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: .9rem; margin: 8px 0 16px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 500; letter-spacing: .08em; font-size: .8rem; text-transform: uppercase; }
+  @media (max-width: 520px) { table, thead, tbody, tr, th, td { display: block; } thead { display: none; }
+    td { border: 0; padding: 2px 0; } tr { border-bottom: 1px solid var(--line); padding: 10px 0; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Delete your Weather Terminal data</h1>
+  <p class="meta">Weather Terminal, Android app by Emma Legrottaglie · Updated 23 October 2026</p>
+
+  <p>Weather Terminal has no accounts and the developer runs no server, so everything the app knows about you is stored on your own phone. You can delete all of it yourself, straight away, without contacting anyone.</p>
+
+  <h2>Delete everything from inside the app</h2>
+  <ol class="steps">
+    <li>Open <strong>Weather Terminal</strong>.</li>
+    <li>On the <strong>Now</strong> screen, tap the <strong>gear icon</strong> at the top right to open <strong>Settings</strong>.</li>
+    <li>Scroll to the <strong>Data</strong> section at the bottom.</li>
+    <li>Tap <strong>DELETE ALL DATA</strong>.</li>
+    <li>Tap <strong>■ DELETE</strong> to confirm.</li>
+  </ol>
+  <p>The data is erased immediately. The app restarts as if newly installed and shows <strong>ALL DATA DELETED</strong>. The labels appear in the language the app is set to; the button is the last item in Settings.</p>
+
+  <h2>Other ways</h2>
+  <ul>
+    <li><strong>Uninstall the app.</strong> Android removes all of its data with it.</li>
+    <li><strong>Clear its storage:</strong> Android Settings › Apps › Weather Terminal › Storage › Clear storage.</li>
+  </ul>
+
+  <h2>What is deleted</h2>
+  <table>
+    <thead><tr><th>Data</th><th>Where it is kept</th><th>After deletion</th></tr></thead>
+    <tbody>
+      <tr><td>Saved places and recently viewed places</td><td>Your phone only</td><td>Deleted immediately</td></tr>
+      <tr><td>Recent place searches</td><td>Your phone only</td><td>Deleted immediately</td></tr>
+      <tr><td>Settings: palette, accents, typeface, motion, language</td><td>Your phone only</td><td>Deleted immediately; defaults return</td></tr>
+      <tr><td>Downloaded forecasts and air-quality data, including the copy the home-screen widgets show</td><td>Your phone only</td><td>Deleted immediately</td></tr>
+    </tbody>
+  </table>
+
+  <h2>What is kept, and for how long</h2>
+  <p><strong>Nothing is kept by the developer.</strong> There are no accounts, no server and no analytics, so there is no copy anywhere else to delete and no retention period. The app also opts out of Android's backup, so none of this data is copied to your Google account, and the Atlas weather map keeps no cookies or browsing data.</p>
+  <p>To show a forecast, the app sends the coordinates of the place you chose, and the text you type in place search, directly to <a href="https://open-meteo.com/en/terms">Open-Meteo</a>. Opening the Atlas tab also sends the place's coordinates to <a href="https://account.windy.com/agreements/windy-privacy-policy">Windy.com</a>. Those services handle these requests, and any logs they keep, under their own privacy policies; the developer never receives them and has no access to them. See the <a href="./">privacy policy</a> for details.</p>
+
+  <h2>Questions</h2>
+  <p>Email <a href="mailto:emmalegrottaglie@gmail.com">emmalegrottaglie@gmail.com</a>.</p>
+</main>
+</body>
+</html>
